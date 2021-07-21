@@ -1,14 +1,20 @@
-import './App.css';
 import Header from "./components/Header";
 import Information from "./components/Information"
+import './index.css';
+
 
 function App() {
+
+
   return (
     <div className="container">
-        <Header/>
+        <Header isSubmitBoxOpen={false}/>
         <Information/>
     </div>
   );
+
 }
+
+
 
 export default App;

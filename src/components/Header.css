@@ -1,12 +1,15 @@
 
 #header {
-    position: absolute;
-    width: 320px;
+    width: 18%;
     display: flex;
+    position: absolute;
+    height: 100%;
 }
 #header .pro-sidebar {
-    height: 100vh;
+    height: auto;
     text-align: center;
+    transition: left .3s ease-out, right .3s ease-out;
+
 
 }
 #header .closemenu {
@@ -20,19 +23,24 @@
     font-size: 22px;
     top: 55px;
     cursor: pointer;
+
 }
 #header .pro-sidebar {
     width: 100%;
     min-width: 100%;
+    border: snow 1px solid;
+    color: snow;
+
 }
 #header .pro-sidebar.collapsed {
     width: 200px;
     min-width: 80px;
+    border: snow 1px solid;
+
 }
 #header .pro-sidebar-inner {
     background-color: rgba(6, 6 ,51, 1);
     box-shadow: snow;
-    padding-top: 10px;
 }
 #header .pro-sidebar-inner .pro-sidebar-layout {
     overflow-y: hidden;
@@ -41,7 +49,6 @@
 }
 #header .pro-sidebar-inner .pro-sidebar-layout .logotext p {
     font-size: 20px;
-    padding: 0 20px;
     color: snow;
     font-weight: bold;
 
@@ -64,10 +71,14 @@
     font-weight: bold;
     padding-top: 50px;
     padding-bottom: 50px;
+    WebkitOverflowScrolling: touch;
+    transition: left .3s ease-out, right .3s ease-out;
 }
 
 #header .pro-sidebar-inner .pro-sidebar-layout ul .pro-inner-item a {
     color: snow;
+    transition: left .3s ease-out, right .3s ease-out;
+
 }
 
 #header .pro-sidebar-inner .pro-sidebar-layout ul .pro-inner-item .pro-icon-wrapper {

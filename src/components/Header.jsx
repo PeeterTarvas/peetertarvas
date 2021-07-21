@@ -5,7 +5,6 @@ import {
     Menu,
     MenuItem,
     SidebarHeader,
-    SidebarFooter,
     SidebarContent,
 } from "react-pro-sidebar";
 
@@ -17,24 +16,20 @@ import { SiGmail } from "react-icons/si";
 import "react-pro-sidebar/dist/css/styles.css";
 import "./Header.css"
 
-const Header = () => {
+const Header = (props) => {
 
 
 
     const [menuCollapse, setMenuCollapse] = useState(false)
 
-    const menuIconCLick = () => {
+    const menuIconCLick = (event) => {
         menuCollapse ? setMenuCollapse(false): setMenuCollapse(true)
     }
 
 
-    let isSubmissionOpen = false;
-    const emailSubmit = () => {
-        if (isSubmissionOpen === false) {
-            isSubmissionOpen = true;
-        } else {
-            isSubmissionOpen = true;
-        }
+    const openSubmit = (event) => {
+        props.isSubmitBoxOpen = !props.isSubmitBoxOpen;
+
     }
 
     return (
@@ -43,7 +38,7 @@ const Header = () => {
                 <ProSidebar collapsed={menuCollapse}>
                     <SidebarHeader>
                         <div className="logtext">
-                            <p> {menuCollapse ? "Media": "About me"}</p>
+                            <p> {menuCollapse ? "Media": "Media"}</p>
                         </div>
                         <div className="closemenu" onClick={menuIconCLick}>
                             {menuCollapse ? (
@@ -67,13 +62,13 @@ const Header = () => {
                             </MenuItem>
                             <MenuItem active={true} icon={<FiFacebook />}>
                                 <a href={"https://www.facebook.com/"} className="links">
-                                    Facebook
+                                    Facebook {props.isSubmitBoxOpen}
                                 </a>
                             </MenuItem>
                             <MenuItem active={true} icon={<SiGmail />}>
-                                <div onClick={emailSubmit}>
+                                <div onClick={openSubmit}>
+                                    Email me
                                 </div>
-                                Email me
                             </MenuItem>
                         </Menu>
                     </SidebarContent>
@@ -85,7 +80,9 @@ const Header = () => {
 
 }
 
-Header.prototype = {
+Header.defaultProps = {
+    isSubmitBoxOpen: false
 }
+
 
 export default Header

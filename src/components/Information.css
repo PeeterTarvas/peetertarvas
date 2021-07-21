@@ -1,0 +1,33 @@
+.information {
+    margin:0 auto;
+    width: 60%;
+    margin-top: 30px;
+    align-self: center;
+    justify-self: start;
+    display: flex;
+    color: snow;
+    justify-content: center;
+
+}
+
+#pictures {
+    display: flex;
+    width: 50%;
+    height: 450px;
+    WebkitOverflowScrolling: touch;
+    transition: left .3s ease-out, right .3s ease-out;
+    margin-top: 30px;
+    margin-left: 30%;
+}
+
+#pictures:hover {
+    border: snow solid 3px;
+    transition: left .3s ease-out, right .3s ease-out;
+
+}
+
+.information #intro {
+    align-self: center;
+}
+
+
