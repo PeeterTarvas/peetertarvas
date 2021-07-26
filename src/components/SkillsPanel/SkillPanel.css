@@ -1,0 +1,13 @@
+.skillful-container {
+    align-self: center;
+    border: black 3px solid;
+    width: 60%;
+    color: snow;
+    margin: 30px;
+}
+
+.heading  {
+    margin-left: 30px;
+    font-size: 50px;
+
+}

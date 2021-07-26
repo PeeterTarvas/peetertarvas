@@ -1,7 +1,9 @@
 import React from "react";
 import './Information.css'
-import IMG_20190616_005315__02 from './images/IMG_20190616_005315__02.jpg'
-import  IMG_20190616_005516 from './images/IMG_20190616_005516.jpg'
+import IMG_20190616_005315__02 from '../images/IMG_20190616_005315__02.jpg'
+import  IMG_20190616_005516 from '../images/IMG_20190616_005516.jpg'
+import Skillbar from "../SkillsPanel/Skillbar";
+import { SiGmail } from "react-icons/si";
 
 
 
@@ -40,7 +42,6 @@ export default class Information extends React.Component {
                         <li>21 years old</li>
                         <li>Tallinn, Estonia</li>
                         <li>Informatics at Taltech</li>
-
                     </ul>
                 </div>
             </div>

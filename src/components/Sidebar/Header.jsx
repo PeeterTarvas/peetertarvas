@@ -8,15 +8,18 @@ import {
     SidebarContent,
 } from "react-pro-sidebar";
 
+
 //import icons from react icons
-import { FiGithub, FiLinkedin, FiFacebook} from "react-icons/fi";
-import {  FiArrowLeftCircle, FiArrowRightCircle } from "react-icons/fi";
+import { FiGithub, FiLinkedin, FiFacebook, FiArrowLeftCircle, FiArrowRightCircle } from "react-icons/fi";
 import { SiGmail } from "react-icons/si";
+
+import PropTypes from 'prop-types'
 
 import "react-pro-sidebar/dist/css/styles.css";
 import "./Header.css"
+import Button from "../Button";
 
-const Header = (props) => {
+const Header = ({isSubmitBoxOpen}) => {
 
 
 
@@ -27,10 +30,22 @@ const Header = (props) => {
     }
 
 
-    const openSubmit = (event) => {
-        props.isSubmitBoxOpen = !props.isSubmitBoxOpen;
-
+    let a = "jah"
+    const menuEmailOnClick = (event) => {
+        if (isSubmitBoxOpen) {
+            isSubmitBoxOpen = false;
+            console.log(a)
+        } else {
+            isSubmitBoxOpen = true;
+            a = 'ei'
+        }
     }
+
+    const onClick = () => {
+        console.log("click")
+    }
+
+
 
     return (
         <>
@@ -62,13 +77,13 @@ const Header = (props) => {
                             </MenuItem>
                             <MenuItem active={true} icon={<FiFacebook />}>
                                 <a href={"https://www.facebook.com/"} className="links">
-                                    Facebook {props.isSubmitBoxOpen}
+                                    Facebook
                                 </a>
                             </MenuItem>
                             <MenuItem active={true} icon={<SiGmail />}>
-                                <div onClick={openSubmit}>
-                                    Email me
-                                </div>
+                                    <div onClick={menuEmailOnClick}>
+                                            Email me
+                                    </div>
                             </MenuItem>
                         </Menu>
                     </SidebarContent>
@@ -82,6 +97,10 @@ const Header = (props) => {
 
 Header.defaultProps = {
     isSubmitBoxOpen: false
+}
+
+Header.propTypes = {
+    isSubmitBoxOpen: PropTypes.bool,
 }
 
 

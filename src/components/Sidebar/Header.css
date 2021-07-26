@@ -39,7 +39,7 @@
 
 }
 #header .pro-sidebar-inner {
-    background-color: rgba(6, 6 ,51, 1);
+    background-color: rgba(0, 0, 0, 1);
     box-shadow: snow;
 }
 #header .pro-sidebar-inner .pro-sidebar-layout {
@@ -97,7 +97,9 @@
 
 #header .pro-sidebar-inner .pro-sidebar-layout .active:hover {
     border: 2px snow solid;
+    background: rgba(40, 48, 69, 1);
     transition: all 0.09s ease-in-out;
+    border-radius: 50px 50px;
 }
 
 
