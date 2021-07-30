@@ -2,8 +2,7 @@ import React from "react";
 import './Information.css'
 import IMG_20190616_005315__02 from '../images/IMG_20190616_005315__02.jpg'
 import  IMG_20190616_005516 from '../images/IMG_20190616_005516.jpg'
-import Skillbar from "../SkillsPanel/Skillbar";
-import { SiGmail } from "react-icons/si";
+
 
 
 

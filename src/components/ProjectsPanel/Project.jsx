@@ -13,7 +13,8 @@ export class Project extends React.Component{
             technologies: props.technologies,
             shortDescription: props.shortDescription,
             link: props.link,
-            secondLink: props.secondLink
+            secondLink: props.secondLink,
+            imgPath: props.imgPath
 
         }
 
@@ -24,17 +25,19 @@ export class Project extends React.Component{
         this.setState({isToggled: !this.state.isToggled})
     }
 
+
     render() {
         return (
             <div className='project-container'>
                 {this.state.isToggled ? (
                     <ul id={"list"}>
-                        <li>{this.props.name}</li>
-                        <li>{this.props.language}</li>
-                        <li>{this.props.shortDescription}</li>
-                        <li>{this.props.technologies}</li>
+                        <li>Name: {this.props.name}</li>
+                        <li>{this.props.language !== null ? 'Language: ': ''}{this.props.language}</li>
+                        <li>{this.props.technologies !== null ? 'Technologies used: ': ''}{this.props.technologies}</li>
                         <li><a href={this.props.link}>Link to projects main page</a></li>
-                        <li><a href={this.props.secondLink}>Link to projects repo</a></li>
+                        <li><a href={this.props.secondLink}>{this.props.secondLink !== null ? 'Link to projects repo': ''}</a></li>
+                        <li><img src={this.props.imgPath}/></li>
+                        <li>{this.props.shortDescription}</li>
                     </ul>
                     ): (
                     <div>{this.props.name}</div>
@@ -44,5 +47,13 @@ export class Project extends React.Component{
             </div>
                 )
 
+}}
+
+Project.defaultProps = {
+    language: null,
+    technologies: null,
+    imgPath: null,
+    secondLink: null
+
 }
-}
+
