@@ -1,0 +1,22 @@
+.technologiesPanel {
+    width: 60%;
+    color: snow;
+}
+
+.header {
+    margin-left: 30px;
+    font-size: 50px
+}
+
+.item {
+    margin: 10px;
+    float: left;
+    margin-right: 10%;
+}
+
+.list {
+    list-style: none;
+    color: snow;
+    display: block;
+    overflow: hidden;
+}

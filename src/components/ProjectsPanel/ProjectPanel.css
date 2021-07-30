@@ -1,0 +1,8 @@
+.projects-container {
+    border: 3px solid black;
+    width: 60%;
+    height: auto;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+}

@@ -1,4 +1,3 @@
-import SiPython from "react-icons/si";
 import React from "react";
 
 

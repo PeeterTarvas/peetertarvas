@@ -17,7 +17,7 @@ import PropTypes from 'prop-types'
 
 import "react-pro-sidebar/dist/css/styles.css";
 import "./Header.css"
-import Button from "../Button";
+import { useRef, useLayoutEffect } from 'react'
 
 const Header = ({isSubmitBoxOpen}) => {
 
