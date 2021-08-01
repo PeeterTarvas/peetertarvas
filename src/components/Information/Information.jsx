@@ -1,12 +1,12 @@
 import React from "react";
 import './Information.css'
 import IMG_20190616_005315__02 from '../images/IMG_20190616_005315__02.jpg'
-import  IMG_20190616_005516 from '../images/IMG_20190616_005516.jpg'
+import IMG_20190616_005516 from '../images/IMG_20190616_005516.jpg'
 
 
 
 
-export default class Information extends React.Component {
+export class Information extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -28,10 +28,9 @@ export default class Information extends React.Component {
 
     render() {
         return (
-            <>
             <div className="information">
                 <div id='intro'>
-                    Hi! My name is Peeter and this is my personal website
+                    <div style={{fontSize: '120%'}}>Hi! My name is Peeter and this is my personal website</div>
 
                     <picture>
                         <img id='pictures' src={this.state.img} alt={"Picture"} onClick={this.clickPicture}/>
@@ -41,11 +40,10 @@ export default class Information extends React.Component {
                         <li>21 years old</li>
                         <li>Tallinn, Estonia</li>
                         <li>Informatics at Taltech</li>
+                        <li>peetertarvas@gmail.com</li>
                     </ul>
                 </div>
             </div>
-
-            </>
 
         )
     }

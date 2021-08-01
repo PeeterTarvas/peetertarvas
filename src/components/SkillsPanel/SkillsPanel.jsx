@@ -5,7 +5,7 @@ import "./SkillPanel.css"
 import { useState} from "react";
 
 
-let SkillsPanel = () => {
+export let SkillsPanel = () => {
 
     const [languages, setLanguages] = useState([
         {
@@ -52,4 +52,3 @@ let SkillsPanel = () => {
     )
 }
 
-export default SkillsPanel;

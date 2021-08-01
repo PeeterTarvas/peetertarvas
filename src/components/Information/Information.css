@@ -7,22 +7,23 @@
     display: flex;
     color: snow;
     justify-content: center;
+    margin-right: 25%;
 
 }
 
 #pictures {
     display: flex;
-    width: 50%;
-    height: 450px;
+    width: 100%;
+    height: 750px;
     WebkitOverflowScrolling: touch;
     transition: left .3s ease-out, right .3s ease-out;
     margin-top: 30px;
-    margin-left: 30%;
 }
 
 #pictures:hover {
     border: snow solid 3px;
     transition: left .3s ease-out, right .3s ease-out;
+    cursor: pointer;
 
 }
 

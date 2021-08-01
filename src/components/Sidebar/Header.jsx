@@ -19,7 +19,7 @@ import "react-pro-sidebar/dist/css/styles.css";
 import "./Header.css"
 import { useRef, useLayoutEffect } from 'react'
 
-const Header = ({isSubmitBoxOpen}) => {
+export const Header = ({isSubmitBoxOpen}) => {
 
 
 
@@ -48,7 +48,6 @@ const Header = ({isSubmitBoxOpen}) => {
 
 
     return (
-        <>
             <div id="header">
                 <ProSidebar collapsed={menuCollapse}>
                     <SidebarHeader>
@@ -89,7 +88,6 @@ const Header = ({isSubmitBoxOpen}) => {
                     </SidebarContent>
                 </ProSidebar>
             </div>
-        </>
 
     )
 
@@ -104,4 +102,3 @@ Header.propTypes = {
 }
 
 
-export default Header

@@ -1,28 +1,21 @@
-.button {
-    border: 3px solid snow;
-    width: 15%;
-    margin-top: 50px;
-    align-self: end;
-    background: black;
-    color: snow;
-    padding: 15px;
-    border-radius: 30px;
-}
 
-.button:hover {
-    color: lightgoldenrodyellow;
-}
 
 .project-container {
-    border: 3px solid black;
     padding: 5%;
     width: 90%;
     display: flex;
-    background: linen;
+    background: snow;
     color: black;
     transition: left .3s ease-out, right .3s ease-out;
     margin-top: 10px;
     align-content: center;
+    box-shadow: -15px 5px 50px;
+}
+
+.project-container:hover {
+    cursor: pointer;
+    border: 5px white solid;
+    border-radius: 50px;
 }
 
 #id {
@@ -31,4 +24,9 @@
 
 li {
     padding-bottom: 10px;
+}
+
+.Tech {
+    display: flex;
+    flex-direction: column;
 }

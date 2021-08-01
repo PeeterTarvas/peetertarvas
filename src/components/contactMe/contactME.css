@@ -1,0 +1,40 @@
+.contact-container {
+    border: black 3px solid;
+    height: 60vh;
+    width: 60%;
+    margin-bottom: 10%;
+    align-content: center;
+    justify-content:start;
+    display: flex;
+    flex-direction: column;
+
+}
+.form {
+    align-content: center;
+    justify-content: start;
+    display: flex;
+    padding: 50px;
+    border: black 3px solid;
+    height: 30vh;
+}
+
+.button {
+    justify-self: center;
+    align-self: end;
+    background: snow;
+    color: black;
+    width: 10%;
+    height: 5vh;
+    border-radius: 50px 50px;
+}
+
+.button:hover {
+    background: lightgoldenrodyellow;
+    cursor: pointer;
+
+}
+
+h1 {
+    font-weight: bold;
+    align-self: center;
+}

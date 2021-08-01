@@ -31,11 +31,14 @@ export const TechnologyPanel = () => {
 
     ])
     return <div className={'technologiesPanel'}>
-        <div className={'header'}>Technologies used</div>
+        <div className={'header'}>Technologies and badges</div>
         <ul className={"list"}>
             {tech.map((technology) => (
                 <li className={"item"} key={tech.id}><Technology icon={technology.logo} name={technology.name}/></li>
             ))}
+            <li><div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="02c05104-f500-4e54-91eb-2e37b7d9bce5" data-share-badge-host="https://www.credly.com">
+                My cisco networking badge
+                </div><script type="text/javascript" async src="https://cdn.credly.com/assets/utilities/embed.js"></script></li>
         </ul>
 
 

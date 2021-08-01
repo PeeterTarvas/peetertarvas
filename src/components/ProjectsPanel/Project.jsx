@@ -1,6 +1,6 @@
-import React, { useState } from "react";
 import './Project.css'
-import {Technology} from "../Tech/Technology";
+import React from "react";
+import ReactPlayer from "react-player";
 
 
 export class Project extends React.Component{
@@ -14,7 +14,8 @@ export class Project extends React.Component{
             shortDescription: props.shortDescription,
             link: props.link,
             secondLink: props.secondLink,
-            imgPath: props.imgPath
+            imgPath: props.imgPath,
+            vidURL: props.vidURL,
 
         }
 
@@ -28,22 +29,21 @@ export class Project extends React.Component{
 
     render() {
         return (
-            <div className='project-container'>
+            <div className='project-container' onClick={(e) => this.togglePanel(e)}>
                 {this.state.isToggled ? (
                     <ul id={"list"}>
                         <li>Name: {this.props.name}</li>
                         <li>{this.props.language !== null ? 'Language: ': ''}{this.props.language}</li>
-                        <li>{this.props.technologies !== null ? 'Technologies used: ': ''}{this.props.technologies}</li>
+                        <li className={'Tech'}>{this.props.technologies !== null ? 'Technologies used: ': ''}{this.props.technologies}</li>
                         <li><a href={this.props.link}>Link to projects main page</a></li>
                         <li><a href={this.props.secondLink}>{this.props.secondLink !== null ? 'Link to projects repo': ''}</a></li>
-                        <li><img src={this.props.imgPath}/></li>
+                        {this.props.imgPath !== null  ? <li><img src={this.props.imgPath}/></li>: ''}
+                        {this.props.vidURL !== null ? <li><ReactPlayer url={this.props.vidURL}/>}</li>: ''}
                         <li>{this.props.shortDescription}</li>
                     </ul>
                     ): (
                     <div>{this.props.name}</div>
                 )}
-                <div onClick={(e) => this.togglePanel(e)}
-                     className={'button'}>{(this.state.isToggled ? ("show less"): ("show more"))}</div>
             </div>
                 )
 
@@ -53,7 +53,8 @@ Project.defaultProps = {
     language: null,
     technologies: null,
     imgPath: null,
-    secondLink: null
+    secondLink: null,
+    vidURL: null
 
 }
 
