@@ -30,6 +30,7 @@ export class Project extends React.Component{
     render() {
         return (
             <div className='project-container' onClick={(e) => this.togglePanel(e)}>
+                <div id={this.state.isToggled ? 'active' : 'muted'}>
                 {this.state.isToggled ? (
                     <ul id={"list"}>
                         <li>Name: {this.props.name}</li>
@@ -44,6 +45,7 @@ export class Project extends React.Component{
                     ): (
                     <div>{this.props.name}</div>
                 )}
+                </div>
             </div>
                 )
 

@@ -22,7 +22,6 @@ const Skillbar = ({bgcolor, precentage, text, icon}) => {
     }
 
     const labelStyles = {
-        color: 'white',
         fontWeight: 'bold',
         marginTop: 40,
         marginLeft: 20,

@@ -17,9 +17,9 @@ export class ContactMe extends React.Component{
             name: '',
             email: '',
             subject: '',
-            recaptchaKey: '6LemB9obAAAAACgnxVA3faF62eWBYSbIXlAftt8o',
-            recaptchaRef: React.createRef,
-            recaptchaToken: '',
+            //recaptchaKey: '6LemB9obAAAAACgnxVA3faF62eWBYSbIXlAftt8o',
+            //recaptchaRef: useRef<ReCAPTCHA>(null),
+            //recaptchaToken: '',
 
         }
         this.submitForm = this.submitForm.bind(this)
@@ -33,7 +33,7 @@ export class ContactMe extends React.Component{
         await this.postSubmission().then(
             () => {
                 this.resetForm()
-                this.state.recaptchaRef.current.reset();
+                //this.state.recaptchaRef.current.reset();
             })
     }
 
@@ -61,16 +61,16 @@ export class ContactMe extends React.Component{
     async postSubmission() {
         const payload = {
             message: `Name: ${this.state.name}\n Email: ${this.state.email}\n Subject: ${this.state.subject}\n Message: ${this.state.message} `,
-            'g-recaptcha-response': this.state.recaptchaToken
+            //'g-recaptcha-response': this.state.recaptchaToken
         }
         try {
             const result = await axios.post(this.state.formSparkURL, payload);
             this.setState({
                 messageSent: 'Your message has been sent! :)',
-                messageSentSuccessfully: false,
+                messageSentSuccessfully: true,
             })
         } catch (error) {
-            console.log(error)
+            console.log(error.log)
             this.setState({
                 messageSent: 'Oops there has been an error! Please contact Peeter via email and he will fix this problem!',
                 messageSentSuccessfully: false,
@@ -100,7 +100,7 @@ export class ContactMe extends React.Component{
                                 {this.state.messageSent}
                             </div>
                             ) : (
-                                <div className={'success-message'}>
+                                <div className={'fail-message'}>
                                     {this.state.messageSent}
                                 </div>
                             )
@@ -139,11 +139,6 @@ export class ContactMe extends React.Component{
                             />
                         </div>
 
-                    <ReCAPTCHA ref={this.state.recaptchaRef}
-                               sitekey={this.state.recaptchaKey}
-                               onChange={this.updateRecaptchaToken}
-
-                    />
 
                         <button onClick={this.submitForm.bind(this)} className={'button'}>Send</button>
                 </form>
@@ -151,3 +146,14 @@ export class ContactMe extends React.Component{
         )
     }
 }
+
+/**
+ * <!--
+ <ReCAPTCHA ref={this.state.recaptchaRef}
+
+ sitekey={this.state.recaptchaKey}
+ onChange={this.updateRecaptchaToken}
+ size={'invisible'}
+
+ /> -->
+ */

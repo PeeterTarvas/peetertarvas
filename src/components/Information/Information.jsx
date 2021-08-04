@@ -30,7 +30,10 @@ export class Information extends React.Component {
         return (
             <div className="information">
                 <div id='intro'>
-                    <div style={{fontSize: '120%'}}>Hi! My name is Peeter and this is my personal website</div>
+                    <div style={{fontSize: '120%'}}>
+                        <span>Peeter</span> <br/> <span id={'tarv'}>Tarvas</span> <br/> <span id={'pers'}>personal</span> <br/>
+                        <span id={'page'}>page</span>
+                    </div>
 
                     <picture>
                         <img id='pictures' src={this.state.img} alt={"Picture"} onClick={this.clickPicture}/>

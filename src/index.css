@@ -2,8 +2,10 @@
 body {
     margin: 0px;
     padding: 0px;
-    color: black;
-    background: white;
+    color: snow;
+    font-weight: bolder;
+    background:  url('./components/images/popart.jpg');
+    background-position: center;
 }
 
 .container {

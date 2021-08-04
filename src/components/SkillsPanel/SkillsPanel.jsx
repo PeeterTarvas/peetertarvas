@@ -27,7 +27,7 @@ export let SkillsPanel = () => {
             color: "#baba25",
             icon: <SiJavascript/>,
             text: "Javascript",
-            percentage: '60%'
+            percentage: '50%'
         },
         {
             id: 4,
