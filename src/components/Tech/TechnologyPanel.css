@@ -1,6 +1,5 @@
 .technologiesPanel {
     width: 60%;
-    color: snow;
 }
 
 .header {
@@ -16,7 +15,6 @@
 
 .list {
     list-style: none;
-    color: snow;
     display: block;
     overflow: hidden;
 }

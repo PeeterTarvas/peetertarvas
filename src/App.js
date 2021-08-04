@@ -13,9 +13,6 @@ function App() {
 
   return (
     <div className="container">
-        <style>
-            @import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
-        </style>
         <Header isSubmitBoxOpen={false}/>
         <div className={'main-container-block'}>
             <Information/>

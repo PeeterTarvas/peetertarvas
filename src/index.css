@@ -2,8 +2,8 @@
 body {
     margin: 0px;
     padding: 0px;
-    background: linear-gradient(45deg, rgba(12, 29, 56, 1), snow) no-repeat;
-    color: snow;
+    color: black;
+    background: white;
 }
 
 .container {
@@ -20,8 +20,7 @@ body {
     height: auto;
     min-width: 1000px;
     margin: auto;
-    font-family: 'EB Garamond', serif;
-
+    font-family: 'Inter', sans-serif;
 }
 
 #list {

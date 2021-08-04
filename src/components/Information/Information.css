@@ -1,13 +1,10 @@
 .information {
-    margin:0 auto;
     width: 60%;
-    margin-top: 30px;
+    margin-top: 5%;
     align-self: center;
     justify-self: start;
     display: flex;
-    color: snow;
     justify-content: center;
-    margin-right: 25%;
 
 }
 
@@ -21,7 +18,6 @@
 }
 
 #pictures:hover {
-    border: snow solid 3px;
     transition: left .3s ease-out, right .3s ease-out;
     cursor: pointer;
 

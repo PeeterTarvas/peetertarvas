@@ -1,4 +1,6 @@
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
+import {Link} from 'react-scroll'
+
 
 import {
     ProSidebar,
@@ -17,7 +19,6 @@ import PropTypes from 'prop-types'
 
 import "react-pro-sidebar/dist/css/styles.css";
 import "./Header.css"
-import { useRef, useLayoutEffect } from 'react'
 
 export const Header = ({isSubmitBoxOpen}) => {
 
@@ -29,26 +30,29 @@ export const Header = ({isSubmitBoxOpen}) => {
         menuCollapse ? setMenuCollapse(false): setMenuCollapse(true)
     }
 
+    const [scrolled, setScrolled] = useState(false)
 
-    let a = "jah"
-    const menuEmailOnClick = (event) => {
-        if (isSubmitBoxOpen) {
-            isSubmitBoxOpen = false;
-            console.log(a)
+    const handleScroll = () => {
+        const offset = window.scrollY;
+        if (offset > 200) {
+            setScrolled(true)
         } else {
-            isSubmitBoxOpen = true;
-            a = 'ei'
+            setScrolled(false)
         }
     }
 
-    const onClick = () => {
-        console.log("click")
+    useEffect(() => {
+        window.addEventListener('scroll', handleScroll)
+    })
+
+    let navbarClasses=['navbar'];
+    if (scrolled) {
+        navbarClasses.push('scrolled');
     }
 
 
-
     return (
-            <div id="header">
+            <div id="header" className={navbarClasses.join(" ")}>
                 <ProSidebar collapsed={menuCollapse}>
                     <SidebarHeader>
                         <div className="logtext">
@@ -80,8 +84,10 @@ export const Header = ({isSubmitBoxOpen}) => {
                                 </a>
                             </MenuItem>
                             <MenuItem active={true} icon={<SiGmail />}>
-                                    <div onClick={menuEmailOnClick}>
+                                    <div>
+                                        <Link to={'contact'} activeClass={'active'} spy={true} smooth={true}>
                                             Email me
+                                        </Link>
                                     </div>
                             </MenuItem>
                         </Menu>

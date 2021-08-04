@@ -2,13 +2,15 @@
 #header {
     width: 18%;
     display: flex;
-    position: absolute;
+    position: fixed;
     height: 244%;
+    top: 0;
+    left: 0;
 }
 #header .pro-sidebar {
     height: auto;
     text-align: center;
-    transition: left .3s ease-out, right .3s ease-out;
+    transition: all .3s ease-in;
 
 
 }
@@ -98,8 +100,9 @@
 #header .pro-sidebar-inner .pro-sidebar-layout .active:hover {
     border: 2px snow solid;
     background: rgba(40, 48, 69, 1);
-    transition: all 0.09s ease-in-out;
+    transition: all .1s ease-in-out;
     border-radius: 50px 50px;
+
 }
 
 

@@ -6,6 +6,9 @@ import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
+      <style>
+          @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+      </style>
     <App />
   </React.StrictMode>,
   document.getElementById('root')

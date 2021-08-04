@@ -38,7 +38,7 @@ export class Project extends React.Component{
                         <li><a href={this.props.link}>Link to projects main page</a></li>
                         <li><a href={this.props.secondLink}>{this.props.secondLink !== null ? 'Link to projects repo': ''}</a></li>
                         {this.props.imgPath !== null  ? <li><img src={this.props.imgPath}/></li>: ''}
-                        {this.props.vidURL !== null ? <li><ReactPlayer url={this.props.vidURL}/>}</li>: ''}
+                        {this.props.vidURL !== null ? <li><ReactPlayer url={this.props.vidURL}/></li>: ''}
                         <li>{this.props.shortDescription}</li>
                     </ul>
                     ): (

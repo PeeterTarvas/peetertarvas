@@ -1,6 +1,8 @@
-import React, {FormEvent, useState} from "react";
+import React, {FormEvent, useRef, useState} from "react";
 import './contactME.css'
 import axios from "axios";
+import  { ReCAPTCHA } from 'react-google-recaptcha'
+
 
 export class ContactMe extends React.Component{
 
@@ -8,22 +10,31 @@ export class ContactMe extends React.Component{
     constructor(props) {
         super(props);
         this.state = {
+            messageSent: '',
+            messageSentSuccessfully: true,
             formSparkURL:`https://submit-form.com/xl8atvh8`,
             message: '',
             name: '',
             email: '',
             subject: '',
+            recaptchaKey: '6LemB9obAAAAACgnxVA3faF62eWBYSbIXlAftt8o',
+            recaptchaRef: React.createRef,
+            recaptchaToken: '',
 
         }
         this.submitForm = this.submitForm.bind(this)
         this.postSubmission = this.postSubmission.bind(this)
+        this.updateRecaptchaToken = this.updateRecaptchaToken.bind(this)
     }
 
 
     async submitForm(e: FormEvent) {
         e.preventDefault();
         await this.postSubmission().then(
-            () => {this.resetForm()})
+            () => {
+                this.resetForm()
+                this.state.recaptchaRef.current.reset();
+            })
     }
 
     onNameChange(event) {
@@ -42,15 +53,28 @@ export class ContactMe extends React.Component{
         this.setState({message: event.target.value})
     }
 
+    updateRecaptchaToken(token: string | null) {
+        this.setState({recaptchaToken: token})
+    }
+
 
     async postSubmission() {
         const payload = {
-            message: `Name: ${this.state.name}\n Email: ${this.state.email}\n Subject: ${this.state.subject}\n Message: ${this.state.message} `
+            message: `Name: ${this.state.name}\n Email: ${this.state.email}\n Subject: ${this.state.subject}\n Message: ${this.state.message} `,
+            'g-recaptcha-response': this.state.recaptchaToken
         }
         try {
             const result = await axios.post(this.state.formSparkURL, payload);
+            this.setState({
+                messageSent: 'Your message has been sent! :)',
+                messageSentSuccessfully: false,
+            })
         } catch (error) {
             console.log(error)
+            this.setState({
+                messageSent: 'Oops there has been an error! Please contact Peeter via email and he will fix this problem!',
+                messageSentSuccessfully: false,
+            })
         }
     }
 
@@ -65,9 +89,23 @@ export class ContactMe extends React.Component{
 
     render() {
         return (
-            <div className={'contact-container'}>
+            <div className={'contact-container'} id={'contact'}>
                 <h1><span>Contact me</span></h1>
                 <form className={'form'} onSubmit={this.submitForm}>
+                    {
+                        this.state.messageSent && (
+
+                            this.state.messageSentSuccessfully ? (
+                            <div className={'success-message'}>
+                                {this.state.messageSent}
+                            </div>
+                            ) : (
+                                <div className={'success-message'}>
+                                    {this.state.messageSent}
+                                </div>
+                            )
+                        )
+                    }
                     <div className={'contact-info'}>
                         <input
                             type={'text'}
@@ -83,7 +121,6 @@ export class ContactMe extends React.Component{
                             required value={this.state.email}
                             placeholder={'Email'}
                         />
-                        <div className={"form-group"}>
                             <input
                                 type={'text'}
                                 id={'subject-input'}
@@ -91,18 +128,24 @@ export class ContactMe extends React.Component{
                                 required value={this.state.email}
                                 placeholder={'Subject'}
                             />
+
                             <textarea
                                 placeholder={'Message'}
-                                id={'message'}
+                                id={'message-input'}
                                 onChange={this.onMessageChange.bind(this)}
                                 required value={this.state.message}
+                                cols={50}
 
                             />
                         </div>
 
+                    <ReCAPTCHA ref={this.state.recaptchaRef}
+                               sitekey={this.state.recaptchaKey}
+                               onChange={this.updateRecaptchaToken}
 
-                    </div>
-                    <button onClick={this.submitForm.bind(this)} className={'button'}>Submit</button>
+                    />
+
+                        <button onClick={this.submitForm.bind(this)} className={'button'}>Send</button>
                 </form>
             </div>
         )
