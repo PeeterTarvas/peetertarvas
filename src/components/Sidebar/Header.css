@@ -14,6 +14,8 @@
 
 
 }
+
+
 #header .closemenu {
     color: snow;
     position: absolute;
@@ -29,15 +31,27 @@
 }
 #header .pro-sidebar {
     width: 100%;
-    min-width: 100%;
     border: snow 1px solid;
     color: snow;
+}
+
+@media screen and (max-width: 700px) {
+
+    #header .pro-sidebar.collapsed {
+        width: 200%;
+        min-width: 250%;
+
+    }
+
+    #header .pro-sidebar {
+        width: 250%;
+        min-width: 250%;
+    }
 
 }
 #header .pro-sidebar.collapsed {
-    width: 200px;
-    min-width: 80px;
-    border: snow 1px solid;
+    width: 60%;
+    min-width: 60%;
 
 }
 #header .pro-sidebar-inner {
@@ -46,7 +60,7 @@
 }
 #header .pro-sidebar-inner .pro-sidebar-layout {
     overflow-y: hidden;
-    padding-top: 20px;
+    padding-top: 20%;
 
 }
 #header .pro-sidebar-inner .pro-sidebar-layout .logotext p {
@@ -117,6 +131,6 @@
     }
 }
 
-#header .pro-inner-item . {
+#header .pro-inner-item {
     color: snow;
 }
