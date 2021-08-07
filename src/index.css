@@ -4,7 +4,7 @@ body {
     padding: 0px;
     color: black;
     font-weight: bold;
-    background: snow center;
+    background: rgba(245, 243, 240, 1) center;
     overflow: scroll;
     -webkit-overflow-scrolling: touch;
     height: 100%;
