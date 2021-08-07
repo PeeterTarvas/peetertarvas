@@ -60,7 +60,7 @@
 }
 #header .pro-sidebar-inner .pro-sidebar-layout {
     overflow-y: hidden;
-    padding-top: 20%;
+    padding-top: 10%;
 
 }
 #header .pro-sidebar-inner .pro-sidebar-layout .logotext p {
@@ -85,11 +85,11 @@
     color: snow;
     margin: 10px 50px;
     font-weight: bold;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 40px;
+    padding-bottom: 40px;
     WebkitOverflowScrolling: touch;
     transition: left .3s ease-out, right .3s ease-out;
-    height: 40px;
+    height: 35px;
 }
 
 #header .pro-sidebar-inner .pro-sidebar-layout ul .pro-inner-item a {
