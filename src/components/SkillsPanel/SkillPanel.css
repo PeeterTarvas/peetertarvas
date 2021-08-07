@@ -9,3 +9,7 @@
     font-size: calc(40px + 6 * ((100vw - 320px) / 680));
 
 }
+
+li {
+    list-style: none;
+}
