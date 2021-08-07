@@ -15,9 +15,6 @@ body {
     line-height: 1.6;
     font-size: calc(16px + 6 * ((100vw - 320px) / 680));
     display: flex;
-    display: -moz-box; /* Firefox*/
-    display: -webkit-box; /* Chrome */
-    display: -ms-flexbox; /* IE 10 */
     flex-direction: column;
     width: 100%;
     margin: auto;
