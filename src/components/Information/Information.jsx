@@ -31,7 +31,7 @@ export class Information extends React.Component {
             <div className="information">
                 <div id='intro'>
                     <div style={{fontSize: '120%', alignSelf: 'center'}}>
-                        <span>Peeter</span> <br/> <span id={'tarv'}>Tarvas</span> <br/> <span id={'pers'}>personal</span> <br/>
+                        <span id={'peeter'}>Peeter</span> <br/> <span id={'tarv'}>Tarvas</span> <br/> <span id={'pers'}>personal</span> <br/>
                         <span id={'page'}>page</span>
                     </div>
 

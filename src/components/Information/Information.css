@@ -8,17 +8,27 @@
 
 }
 
+#peeter {
+    font-size: 120%;
+}
+
 #tarv {
     margin-left: 15%;
+    font-size: 120%;
+
 }
 
 #pers {
     margin-left: 30%;
+    font-size: 120%;
+
 
 }
 
 #page {
     margin-left: 55%;
+    font-size: 120%;
+
 
 }
 
@@ -45,4 +55,8 @@
     align-self: center;
 }
 
-
+@media screen and (max-width: 700px) {
+    .information{
+        width: 100%;
+    }
+}

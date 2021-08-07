@@ -37,6 +37,17 @@
 
 @media screen and (max-width: 700px) {
 
+    #header .pro-sidebar-inner .pro-sidebar-layout .logotext p a {
+        visibility: hidden;
+        display: none;
+    }
+
+    #header .closemenu {
+        font-size: 200%;
+        margin-top: 0;
+        right: 15%;
+    }
+
     #header .pro-sidebar.collapsed {
         width: 200%;
         min-width: 250%;
@@ -44,8 +55,8 @@
     }
 
     #header .pro-sidebar {
-        width: 250%;
-        min-width: 250%;
+        width: 450%;
+        min-width: 450%;
     }
 
 }
