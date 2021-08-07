@@ -65,8 +65,6 @@ h1 {
     align-self: center;
     height: auto;
 
-
-
 }
 
 #name-input {
@@ -97,7 +95,7 @@ h1 {
 
 }
 #message-input {
-    width: 100%;
+    width: 180%;
     height: 30vh;
     align-self: center;
     margin-bottom: 10px;
@@ -134,4 +132,27 @@ h1 {
     border-radius: 10px 5px;
     transition: all .2s ease-in;
 
+}
+
+@media screen and (max-width: 700px) {
+
+   .contact-container {
+       width: 100%;
+   }
+
+    #email-input {
+        width: 180%;
+
+    }
+
+    #subject-input {
+        width: 180%;
+    }
+
+    #name-input {
+        width: 180%;
+    }
+    #message-input {
+        width: 180%;
+    }
 }

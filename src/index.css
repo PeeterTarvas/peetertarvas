@@ -15,7 +15,6 @@ body {
 }
 
 
-
 .container {
     line-height: 1.6;
     font-size: calc(16px + 6 * ((100vw - 320px) / 680));
