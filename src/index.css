@@ -6,6 +6,8 @@ body {
     font-weight: bold;
     background: rgba(245, 243, 240, 1) center;
     height: 100%;
+    overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
 
 }
 
@@ -21,9 +23,7 @@ body {
     margin: auto;
     font-family: 'Inter', sans-serif;
     height: 100%;
-    overflow: hidden;
-    overflow-x: scroll;
-    -webkit-overflow-scrolling: touch;
+
 
 
 
