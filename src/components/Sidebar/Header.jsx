@@ -79,7 +79,7 @@ export const Header = ({isSubmitBoxOpen}) => {
                                 </a>
                             </MenuItem>
                             <MenuItem active={true} icon={<FiFacebook />}>
-                                <a href={"https://www.facebook.com/"} className="links">
+                                <a href={"https://www.facebook.com/peeter.tarvas/"} className="links">
                                     Facebook
                                 </a>
                             </MenuItem>
