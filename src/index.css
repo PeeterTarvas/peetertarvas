@@ -1,14 +1,19 @@
 
 body {
-    margin: 0px;
-    padding: 0px;
+
     color: black;
     font-weight: bold;
     background: rgba(245, 243, 240, 1) center;
-    height: 100%;
-    overflow-x: scroll;
+    overflow: auto;
     -webkit-overflow-scrolling: touch;
 
+}
+
+
+.wrapper {
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    height: 100%;
 }
 
 .container {
@@ -20,8 +25,8 @@ body {
     margin: auto;
     font-family: 'Inter', sans-serif;
     height: 100%;
-
-
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
 
 
 }

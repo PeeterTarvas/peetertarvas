@@ -6,11 +6,12 @@ import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-      <script src="https://www.google.com/recaptcha/api.js?render=[6LemB9obAAAAACgnxVA3faF62eWBYSbIXlAftt8o]"/>
       <style>
           @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
       </style>
+      <div className={'wrapper'}>
     <App />
+      </div>
   </React.StrictMode>,
   document.getElementById('root')
 );
