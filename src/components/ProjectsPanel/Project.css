@@ -25,6 +25,8 @@
 #muted {
     height: 50px;
     transition: all .6s ease-in-out;
+    font-size: calc(16px + 6 * ((100vw - 320px) / 680));
+
 
 }
 
