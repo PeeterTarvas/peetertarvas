@@ -21,7 +21,8 @@ body {
     margin: auto;
     font-family: 'Inter', sans-serif;
     height: 100%;
-    overflow:hidden ;
+    overflow: hidden;
+    overflow-x: scroll;
     -webkit-overflow-scrolling: touch;
 
 
