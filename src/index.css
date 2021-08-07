@@ -1,20 +1,20 @@
 
+html {
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    height: 100%;
+}
+
 body {
 
     color: black;
     font-weight: bold;
     background: rgba(245, 243, 240, 1) center;
-    overflow: auto;
-    -webkit-overflow-scrolling: touch;
+
 
 }
 
 
-.wrapper {
-    overflow: auto;
-    -webkit-overflow-scrolling: touch;
-    height: 100%;
-}
 
 .container {
     line-height: 1.6;
@@ -25,8 +25,7 @@ body {
     margin: auto;
     font-family: 'Inter', sans-serif;
     height: 100%;
-    overflow: auto;
-    -webkit-overflow-scrolling: touch;
+
 
 
 }
