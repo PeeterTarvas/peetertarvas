@@ -23,8 +23,6 @@ body {
     width: 100%;
     margin: auto;
     font-family: 'Inter', sans-serif;
-    overflow: scroll;
-    -webkit-overflow-scrolling: touch;
     height: 100%;
 
 
