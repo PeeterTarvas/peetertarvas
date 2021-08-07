@@ -35,10 +35,11 @@ body {
 
 .container .main-container-block {
     display: flex;
-    align-self: flex-end;
+    align-self: center;
     width: 80%;
     min-width: 80%;
     align-items: center;
     flex-direction: column;
+    margin-left: 5%;
 
 }
