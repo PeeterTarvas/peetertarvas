@@ -12,6 +12,10 @@
 }
 
 
+#vid {
+    width: 90%;
+}
+
 #active {
     height: auto;
     transition: all .6s ease-in-out;
