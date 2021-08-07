@@ -3,7 +3,7 @@ body {
     margin: 0px;
     padding: 0px;
     color: black;
-    font-weight: bolder;
+    font-weight: bold;
     background: snow center;
     overflow: scroll;
     -webkit-overflow-scrolling: touch;
