@@ -6,6 +6,9 @@ body {
     font-weight: bolder;
     background:  url('./components/images/popart.jpg');
     background-position: center;
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
+
 }
 
 .container {
@@ -17,11 +20,14 @@ body {
     display: -webkit-box; /* Chrome */
     display: -ms-flexbox; /* IE 10 */
     flex-direction: column;
-    overflow: auto;
     width: 100%;
     height: auto;
     margin: auto;
     font-family: 'Inter', sans-serif;
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
+
+
 }
 
 #list {
