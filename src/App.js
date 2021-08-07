@@ -6,6 +6,7 @@ import {ProjectsPanel} from './components/ProjectsPanel/ProjectsPanel'
 import { TechnologyPanel } from './components/Tech/TechnologyPanel'
 import { ContactMe } from "./components/contactMe/contactMe";
 import React from 'react'
+import {Home} from "./components/head";
 
 
 
@@ -14,6 +15,7 @@ function App() {
 
   return (
     <div className="container">
+        <Home/>
         <Header isSubmitBoxOpen={false}/>
         <div className={'main-container-block'}>
             <Information/>
