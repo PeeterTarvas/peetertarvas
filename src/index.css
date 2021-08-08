@@ -12,8 +12,7 @@ body {
 
     color: black;
     font-weight: bold;
-    background: rgba(245, 243, 240, 1) center;
-    align-items: start;
+    background: snow center;
 
 
 }
@@ -28,8 +27,7 @@ body {
     margin: auto;
     font-family: 'Inter', sans-serif;
     height: 100%;
-    align-items: flex-start;
-
+    align-items: center;
 
 
 }
@@ -45,7 +43,7 @@ body {
     min-width: 80%;
     flex-direction: column;
     margin-left: 5%;
-    align-items: flex-start;
+    align-items: center;
 
 
 }
