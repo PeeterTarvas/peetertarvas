@@ -30,7 +30,7 @@ export const Header = ({isSubmitBoxOpen}) => {
         menuCollapse ? setMenuCollapse(false): setMenuCollapse(true)
     }
 
-    const [scrolled, setScrolled] = useState(false)
+    const [scrolled, setScrolled] = useState(true)
 
     const handleScroll = () => {
         const offset = window.scrollY;
