@@ -1,44 +1,51 @@
 .information {
-    width: 60%;
+    width: 80%;
     margin-top: 5%;
     align-self: center;
     justify-self: start;
     display: flex;
     justify-content: center;
+    margin-left: 5%;
 
 }
 
 #peeter {
-    margin-left: 0;
+    margin-left: 5%;
     font-size: 120%;
 }
 
 #tarv {
-    margin-left: 15%;
+    margin-left: 25%;
     font-size: 120%;
 
 }
 
 #pers {
-    margin-left: 30%;
+    margin-left: 45%;
     font-size: 120%;
 
 
 }
 
 #page {
-    margin-left: 55%;
+    margin-left: 70%;
     font-size: 120%;
 
 
 }
 
+@media screen and (max-width: 700px) {
+    .technologiesPanel {
+        width: 100%;
+    }
+}
+
 #pictures {
     display: flex;
-    width: 75%;
-    height: 75%;
-    min-width: 75%;
-    min-height: 75%;
+    width: 70%;
+    height: 70%;
+    min-width: 50%;
+    min-height: 50%;
     WebkitOverflowScrolling: touch;
     transition: left .3s ease-out, right .3s ease-out;
     margin-top: 30px;

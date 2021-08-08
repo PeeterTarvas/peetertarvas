@@ -41,7 +41,7 @@ export let SkillsPanel = () => {
     return (
         <div className="skillful-container">
             <div className='heading'>Languages</div>
-            <ul>
+            <ul className={'items'}>
                 {languages.map((lang) => (
                     <li key={lang.id}>
                         <Skillbar bgcolor={lang.color} icon={lang.icon} text={lang.text} precentage={lang.percentage}/>

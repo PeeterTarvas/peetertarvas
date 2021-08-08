@@ -1,7 +1,8 @@
 .skillful-container {
     align-self: center;
-    width: 60%;
+    width: 80%;
     margin: 30px;
+    align-items: center;
 }
 
 @media screen and (max-width: 700px) {
@@ -10,8 +11,14 @@
     }
 }
 
+.items {
+    margin-left: 10%;
+    align-items: center;
+}
+
 .heading  {
     font-size: 200%;
+    margin-left: 5%;
 
 }
 
