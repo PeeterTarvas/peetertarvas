@@ -31,7 +31,7 @@
 }
 #header .pro-sidebar {
     width: 150%;
-    border: snow 1px solid;
+    border: #3F3532 1px solid;
     color: snow;
 }
 
@@ -66,7 +66,7 @@
 
 }
 #header .pro-sidebar-inner {
-    background-color: black;
+    background-color: #564B49;
     box-shadow: snow;
 }
 #header .pro-sidebar-inner .pro-sidebar-layout {
@@ -124,8 +124,7 @@
 }
 
 #header .pro-sidebar-inner .pro-sidebar-layout .active:hover {
-    border: 2px snow solid;
-    background: rgba(40, 48, 69, 1);
+    background: #BEB0AE;
     transition: all .1s ease-in-out;
     border-radius: 50px 50px;
 

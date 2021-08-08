@@ -5,7 +5,8 @@
     justify-self: start;
     display: flex;
     justify-content: center;
-    margin-left: 5%;
+    align-items: flex-start;
+    margin-bottom: 20%;
 
 }
 
@@ -35,9 +36,7 @@
 }
 
 @media screen and (max-width: 700px) {
-    .technologiesPanel {
-        width: 100%;
-    }
+
 }
 
 #pictures {
@@ -60,7 +59,7 @@
 }
 
 .information #intro {
-    align-self: center;
+    align-self: flex-start;
 }
 
 @media screen and (max-width: 700px) {
