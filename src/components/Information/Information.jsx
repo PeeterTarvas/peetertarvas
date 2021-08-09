@@ -38,9 +38,10 @@ export class Information extends React.Component {
 
                     <div className={'bioHeader'} style={{fontSize:'200%', alignSelf:'flex-start'}}>Biography</div>
                     <div className={'biography'}>
-                        Hi, My name is Peeter Tarvas and I'm a second year CS student at TalTech.
-                        Im 21 years old and heave been living in Tallinn form my whole life.
-                        I aspire to become a good programmer, armature historian, designer, polymath and a decent human being.
+                        Hi, My name is Peeter Tarvas and I'm a first
+ year CS student at TalTech.
+                        Im 21 years old and have been living in Tallinn form my whole life.
+                        I aspire to become a good programmer, amature historian, designer, polymath and a decent human being.
                     </div>
                 </div>
             </div>
