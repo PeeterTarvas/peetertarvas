@@ -31,16 +31,15 @@ export class Information extends React.Component {
             <div className="information">
                 <div id='intro'>
                     <div style={{fontSize: '120%', alignSelf: 'center', marginBottom:'20%'}}>
-                        <span id={'peeter'}>Peeter</span> <br/> <span id={'tarv'}>Tarvas</span> <br/> <span id={'pers'}>personal</span> <br/>
-                        <span id={'page'}>page</span>
+                        <span id={'peeter'}>Peeter</span> <br/> <span id={'tarv'}>Tarvas</span> <br/>
                     </div>
 
 
-                    <div className={'bioHeader'} style={{fontSize:'200%', alignSelf:'flex-start'}}>Biography</div>
+                    <div className={'bioHeader'} style={{fontSize:'200%'}}>Biography</div>
                     <div className={'biography'}>
-                        Hi, My name is Peeter Tarvas and I'm a second year CS student at TalTech.
-                        Im 21 years old and heave been living in Tallinn form my whole life.
-                        I aspire to become a good programmer, armature historian, designer, polymath and a decent human being.
+                        Hi, My name is Peeter Tarvas and I'm a first year CS student at TalTech.
+                        I'm 21 years old and have been living in Tallinn form my whole life.
+                        I aspire to become a good programmer, armature historian, polymath and a decent human being.
                     </div>
                 </div>
             </div>

@@ -5,7 +5,7 @@
     width: 80%;
     display: flex;
     transition: all .3s ease-in-out;
-    margin-top: 10px;
+    margin-bottom: 2rem;
     align-content: flex-start;
     box-shadow: 2px 2px 4px 2px;
     border-radius: 10px;
@@ -32,7 +32,7 @@
 
 .project-container:hover {
     cursor: pointer;
-    border-bottom: mediumseagreen 10px solid;
+    border-bottom: #301010 10px solid;
     border-bottom-left-radius: 10px;
 
 }

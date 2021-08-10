@@ -1,29 +1,29 @@
 .technologiesPanel {
     width: 80%;
+
 }
 
 .header {
     font-size: 200%;
-    margin-left: 5%;
     align-self: flex-start;
 
 }
 @media screen and (max-width: 700px) {
     .technologiesPanel {
         width: 100%;
+        margin-bottom: 3rem;
+
     }
 }
 
 .item {
-    margin: 10px;
+    margin: 2rem;
     float: left;
-    margin-right: 10%;
 }
 
 .list {
     list-style: none;
     display: block;
     overflow: hidden;
-    margin-left: 5%;
 
 }

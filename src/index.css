@@ -12,7 +12,7 @@ body {
 
     color: black;
     font-weight: bold;
-    background: #f6e8e5 center;
+    background: #e8ded1 center;
     font-family: "FuturaPT", Helvetica, Arial, sans-serif;
 
 
@@ -43,8 +43,11 @@ body {
     width: 80%;
     min-width: 80%;
     flex-direction: column;
-    margin-left: 5%;
     align-items: center;
+}
 
-
+@media screen and (max-width: 700px) {
+    .container .main-container-block {
+        margin-left: 3rem;
+    }
 }

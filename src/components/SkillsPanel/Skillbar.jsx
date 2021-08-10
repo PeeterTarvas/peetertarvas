@@ -9,7 +9,7 @@ const Skillbar = ({bgcolor, precentage, text, icon}) => {
     const contanerStyle = {
         height: 15,
         width: '50%',
-        background: "#e0e0de",
+        background: "#fcfcfc",
         borderRadius: "25px",
         marginTop: 50,
     }
@@ -18,7 +18,7 @@ const Skillbar = ({bgcolor, precentage, text, icon}) => {
         height: '100%',
         width:`${precentage}`,
         backgroundColor: bgcolor,
-        textAlign: 'right'
+        textAlign: 'left'
     }
 
     const labelStyles = {
@@ -31,7 +31,7 @@ const Skillbar = ({bgcolor, precentage, text, icon}) => {
         display: 'flex',
         flexDirection: 'row',
 
-}
+    }
     const iconStyle = {
         height: 15,
         marginTop: 38,
