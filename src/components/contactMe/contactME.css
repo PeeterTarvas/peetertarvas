@@ -139,7 +139,7 @@ h1 {
 
    .contact-container {
        width: 95%;
-       align-self: flex-end;
+       align-self: center;
    }
 
     #email-input {

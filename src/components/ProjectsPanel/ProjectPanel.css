@@ -21,8 +21,9 @@
 .projects {
     margin: 10%;
 }
-
+    
 .header {
     font-size: 200%;
     align-self: flex-start;
+    margin-bottom: 2%;
 }
