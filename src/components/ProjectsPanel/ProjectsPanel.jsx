@@ -18,7 +18,7 @@ export const ProjectsPanel = () => {
             technologies: [<Technology name={'Bash'} icon={<SiGnubash/>}/>, <Technology name={'Git'} icon={<SiGit/>}/>],
             shortDescription: 'In this project me and 2 of my classmates did a computer game for the first year project in CS.',
             link: 'https://petarv.pages.taltech.ee/iti0301-2021-docs/',
-            secondLink: 'https://github.com/PeeterTarvas/BoxheadTypeGame',
+            repositoryLink: 'https://github.com/PeeterTarvas/BoxheadTypeGame',
             vidURL: 'https://www.youtube.com/watch?v=mG-V8MXyDiI',
 
         },
@@ -32,6 +32,15 @@ export const ProjectsPanel = () => {
         },
         {
             id: 3,
+            name: 'Stockbooster',
+            shortDescription: 'This was a project that me and 3 of my friends made, our idea was to build a website where you can view stocks and their information.' +
+                'The main motivation behind this project was to learn new technologies(like docker and nginx),' +
+                ' languages(like Typescript) and frameworks(like Spring Boot and Angular)',
+            link: 'https://stockbooster.ml/app-layout',
+            repositoryLink: "... need to move everything form gitlab to github"
+        },
+        {
+            id: 4,
             name: 'This page',
             language: 'Javascript(with React.js framework)',
             shortDescription: 'This is my second page that I have written, its mainly front-end. ',
@@ -45,7 +54,7 @@ export const ProjectsPanel = () => {
             {project.map((project) => (
                 <Project name={project.name} language={project.language}
                          technologies={project.technologies} shortDescription={project.shortDescription}
-                         link={project.link} vidURL={project.vidURL} secondLink={project.secondLink}
+                         link={project.link} vidURL={project.vidURL} secondLink={project.repositoryLink}
                 />
             ))}
         </div>
