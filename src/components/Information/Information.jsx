@@ -31,14 +31,14 @@ export class Information extends React.Component {
             <div className="information">
                 <div id='intro'>
                     <div style={{fontSize: '120%', alignSelf: 'center', marginBottom:'20%'}}>
-                        <span  id={'peeter'}>Peeter</span> <br/> <span id={'tarv'}>Tarvas</span> <br/>
+                        <span  id={'peeter'}>Peeter Tarvas</span> <br/>
                     </div>
 
 
                     <div className={'bioHeader'} style={{fontSize:'200%'}}>Biography</div>
                     <div className={'biography'}>
-                        Hi, My name is Peeter Tarvas and I'm a first year CS student at TalTech.
-                        I'm 21 years old and have been living in Tallinn form my whole life.
+                        Hi, My name is Peeter Tarvas and I'm a second year CS student at TalTech.
+                        I'm 22 years old and have been living in Tallinn form my whole life.
                         I aspire to become a good programmer, amateur historian, polymath and a decent human being.
                     </div>
                 </div>

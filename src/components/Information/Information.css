@@ -19,18 +19,7 @@
     text-decoration: underline;
 }
 
-#tarv {
-    font-size: 150%;
-    margin-left: 50%;
-    font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", Helvetica, fantasy;
-    font-weight: normal;
-    text-decoration: underline;
 
-
-
-
-
-}
 
 
 @media screen and (max-width: 700px) {
