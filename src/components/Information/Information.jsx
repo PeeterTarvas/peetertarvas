@@ -39,7 +39,7 @@ export class Information extends React.Component {
                     <div className={'biography'}>
                         Hi, My name is Peeter Tarvas and I'm a second year CS student at TalTech.
                         I'm 22 years old and have been living in Tallinn form my whole life.
-                        I aspire to become a good programmer, amateur historian, polymath and a decent human being.
+                        I aspire to become a good programmer, amateur historian and a polymath.
                     </div>
                 </div>
             </div>
@@ -48,10 +48,5 @@ export class Information extends React.Component {
     }
 
 
-    /*
-    <picture>
-                        <img id='pictures' src={this.state.img} alt={"Picture"} onClick={this.clickPicture}/>
-                    </picture>
-     */
 
 }

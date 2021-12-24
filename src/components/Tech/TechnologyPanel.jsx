@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { SiGit, SiDocker, SiApache, SiGnubash} from "react-icons/si";
+import {SiGit, SiDocker, SiApache, SiGnubash, SiNginx, SiAmazonaws} from "react-icons/si";
 import './TechnologyPanel.css'
 import React from "react";
 import { Technology } from './Technology'
@@ -26,12 +26,20 @@ export const TechnologyPanel = () => {
             id: 4,
             logo: <SiGnubash/>,
             name: 'Bash'
-
+        },
+        {
+            id: 5,
+            logo: <SiNginx/>,
+            name: 'Nginx'
+        }, {
+            id: 6,
+            logo: <SiAmazonaws/>,
+            name: 'AWS(ec2 mainly)'
         }
 
     ])
     return <div className={'technologiesPanel'}>
-        <div className={'header'}>Technologies and badges</div>
+        <div className={'header'}>Technologies used and familiar with</div>
         <ul className={"list"}>
             {tech.map((technology) => (
                 <li className={"item"} key={tech.id}><Technology icon={technology.logo} name={technology.name}/></li>

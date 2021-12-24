@@ -15,9 +15,7 @@ export const ProjectsPanel = () => {
             id: 1,
             name: 'Zombieshooter',
             language: 'Java',
-            technologies: [<Technology name={'Bash'} icon={<SiGnubash/>}/>, <Technology name={'Git'} icon={<SiGit/>}/>],
             shortDescription: 'In this project me and 2 of my classmates did a computer game for the first year project in CS.',
-            link: 'https://petarv.pages.taltech.ee/iti0301-2021-docs/',
             repositoryLink: 'https://github.com/PeeterTarvas/BoxheadTypeGame',
             vidURL: 'https://www.youtube.com/watch?v=mG-V8MXyDiI',
 
@@ -33,6 +31,7 @@ export const ProjectsPanel = () => {
         {
             id: 3,
             name: 'Stockbooster',
+            language: 'back-end: Java with Spring Boot, front-end Typescript with Angular CLI, used Angular Material as well for simplifications',
             shortDescription: 'This was a project that me and 3 of my friends made, our idea was to build a website where you can view stocks and their information.' +
                 'The main motivation behind this project was to learn new technologies(like docker and nginx),' +
                 ' languages(like Typescript) and frameworks(like Spring Boot and Angular)',
@@ -42,7 +41,7 @@ export const ProjectsPanel = () => {
         {
             id: 4,
             name: 'This page',
-            language: 'Javascript(with React.js framework)',
+            language: 'Javascript with React framework',
             shortDescription: 'This is my second page that I have written, its mainly front-end. ',
             link: 'https://github.com/PeeterTarvas/peetertarvas',
         }
