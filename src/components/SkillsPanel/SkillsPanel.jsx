@@ -20,35 +20,35 @@ export let SkillsPanel = () => {
             color: "#751430",
             icon: <SiJava/>,
             text: "Java",
-            percentage: '80%'
+            percentage: '70%'
         },
         {
             id: 3,
             color: "#baba25",
             icon: <SiJavascript/>,
             text: "Javascript",
-            percentage: '70%'
+            percentage: '55%'
         },
         {
             id: 4,
             color: "#518ef0",
             icon: <SiReact/>,
             text: "React",
-            percentage: '60%'
+            percentage: '45%'
         },
         {
             id: 5,
             color: "#a6120d",
             icon: <SiAngular/>,
             text: "Angular",
-            percentage: '65%'
+            percentage: '50%'
         },
         {
             id: 6,
             color: "#15b347",
             icon: <SiSpring/>,
             text: "Spring Boot",
-            percentage: '70%'
+            percentage: '60%'
         },
     ])
 
