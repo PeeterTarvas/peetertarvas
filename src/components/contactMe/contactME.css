@@ -38,7 +38,7 @@
     -o-transition: width .3s, height .3s, background-color .3s, transform 2s;
     -moz-transition: width .3s, height .3s, background-color .3s, transform 2s;
 
-   background: rgba(112, 63, 57, 1);
+   background: rgba(21, 21, 41, 1);
 
 }
 
@@ -47,7 +47,7 @@
     width: 20%;
     height: 8vh;
     opacity: 1;
-    background:rgba(61, 21, 16, 1);
+    background:rgba(21, 21, 41, 0.9);
 ;
 
 

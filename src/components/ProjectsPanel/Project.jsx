@@ -16,7 +16,6 @@ export class Project extends React.Component{
             secondLink: props.secondLink,
             imgPath: props.imgPath,
             vidURL: props.vidURL,
-
         }
 
         this.togglePanel = this.togglePanel.bind(this);

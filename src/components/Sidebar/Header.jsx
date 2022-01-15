@@ -19,6 +19,7 @@ import PropTypes from 'prop-types'
 
 import "react-pro-sidebar/dist/css/styles.css";
 import "./Header.css"
+import {Container, Nav, Navbar, NavDropdown} from "react-bootstrap";
 
 export const Header = ({isSubmitBoxOpen}) => {
 
@@ -26,9 +27,7 @@ export const Header = ({isSubmitBoxOpen}) => {
 
     const [menuCollapse, setMenuCollapse] = useState(true)
 
-    const menuIconCLick = (event) => {
-        menuCollapse ? setMenuCollapse(false): setMenuCollapse(true)
-    }
+
 
     const [scrolled, setScrolled] = useState(false)
 
@@ -45,55 +44,30 @@ export const Header = ({isSubmitBoxOpen}) => {
         window.addEventListener('scroll', handleScroll)
     })
 
-    let navbarClasses=['navbar'];
-    if (scrolled) {
-        navbarClasses.push('scrolled');
-    }
+
 
 
     return (
-            <div id="header" className={navbarClasses.join(" ")}>
-                <ProSidebar collapsed={menuCollapse}>
-                    <SidebarHeader>
-                        <div className="logtext">
-                            <p> {menuCollapse ? "Media": "Media"}</p>
-                        </div>
-                        <div className="closemenu" onClick={menuIconCLick}>
-                            {menuCollapse ? (
-                                <FiArrowRightCircle/>
-                            ) : (
-                                <FiArrowLeftCircle/>
-                            )}
-                        </div>
-                    </SidebarHeader>
-                    <SidebarContent>
-                        <Menu iconShape={"square"}>
-                            <MenuItem active={true} icon={<FiGithub />}>
-                                <a href={"https://github.com/PeeterTarvas"} className="links">
-                                    Github
-                                </a>
-                            </MenuItem>
-                            <MenuItem active={true} icon={<FiLinkedin />}>
-                                <a href={"https://www.linkedin.com/in/peeter-tarvas-690a58171/"} className="links">
-                                    Linkedin
-                                </a>
-                            </MenuItem>
-                            <MenuItem active={true} icon={<FiFacebook />}>
-                                <a href={"https://www.facebook.com/peeter.tarvas/"} className="links">
-                                    Facebook
-                                </a>
-                            </MenuItem>
-                            <MenuItem active={true} icon={<SiGmail />}>
-                                    <div>
-                                        <Link to={'contact'} activeClass={'active'} spy={true} smooth={true}>
-                                            Email me
-                                        </Link>
-                                    </div>
-                            </MenuItem>
-                        </Menu>
-                    </SidebarContent>
-                </ProSidebar>
-            </div>
+        <Navbar className={'navbar w-100'}>
+            <Container className={'d-flex w-50 align-items-end'} >
+            <Navbar.Collapse id="basic-navbar-nav">
+                <Nav className="ms-auto  my-lg-0"
+                     style={{ maxHeight: '100px' }}
+                     navbarScroll>
+                    <NavDropdown title={<span className="text-white w-30">Media</span>} id="basic-nav-dropdown">
+                        <NavDropdown.Item href="https://www.facebook.com/peeter.tarvas/">Facebook</NavDropdown.Item>
+                        <NavDropdown.Divider />
+                        <NavDropdown.Item href="https://www.instagram.com/ptr.trvs/">Instagram</NavDropdown.Item>
+                        <NavDropdown.Divider />
+                        <NavDropdown.Item href="https://github.com/PeeterTarvas">Github</NavDropdown.Item>
+                        <NavDropdown.Divider />
+                        <NavDropdown.Item href="https://www.linkedin.com/in/peeter-tarvas-690a58171/">Linkedin</NavDropdown.Item>
+                    </NavDropdown>
+                </Nav>
+            </Navbar.Collapse>
+            </Container>
+        </Navbar>
+
 
     )
 

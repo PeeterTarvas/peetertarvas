@@ -4,7 +4,6 @@
     margin-top: 3%;
     align-self: center;
     justify-self: start;
-    display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 10rem;
@@ -18,33 +17,10 @@
     font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", Helvetica, fantasy;
     font-weight: normal;
     text-decoration: underline;
-}
-
-
-
-
-@media screen and (max-width: 700px) {
 
 }
 
-#pictures {
-    display: flex;
-    width: 70%;
-    height: 70%;
-    min-width: 50%;
-    min-height: 50%;
-    WebkitOverflowScrolling: touch;
-    transition: left .3s ease-out, right .3s ease-out;
-    margin-top: 30px;
-    border-radius: 50px;
-}
 
-#pictures:hover {
-    border: #435fc4 3px solid;
-    transition: all .1s ease-out;
-    cursor: pointer;
-
-}
 
 .information #intro {
     align-self: flex-start;
