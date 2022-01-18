@@ -4,7 +4,7 @@ html {
     overflow-y: scroll;
     -webkit-overflow-scrolling: touch;
     height: 100%;
-    align-items: start;
+    width: 100%;
 
 }
 
@@ -12,42 +12,33 @@ body {
 
     color: black;
     font-weight: bold;
-    background: #e8ded1 center;
+    background: #e8ded1;
     font-family: "FuturaPT", Helvetica, Arial, sans-serif;
 
-
 }
-
-
 .container {
     line-height: 1.6;
     font-size: calc(16px + 6 * ((100vw - 320px) / 680));
     display: flex;
     flex-direction: column;
     width: 100%;
-    margin: auto;
     font-family: 'Inter', sans-serif;
-    height: 100%;
     align-items: center;
-
-
+    max-width: 100% !important ;
+    padding: 0 !important;
 }
 
 #list {
     list-style: none;
 }
 
+
 .container .main-container-block {
     display: flex;
     align-self: center;
-    width: 80%;
     min-width: 80%;
     flex-direction: column;
     align-items: center;
+    margin-inline: 5%;
 }
 
-@media screen and (max-width: 700px) {
-    .container .main-container-block {
-        margin-left: 3rem;
-    }
-}

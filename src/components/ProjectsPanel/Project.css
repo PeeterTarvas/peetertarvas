@@ -2,13 +2,13 @@
 
 .project-container {
     padding: 5%;
-    width: 80%;
     display: flex;
-    transition: all .3s ease-in-out;
+    transition: all .1s ease-in-out;
     margin-bottom: 2rem;
     align-content: flex-start;
-    box-shadow: 2px 2px 4px 2px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
     border-radius: 10px;
+    width: 80%;
 }
 
 
@@ -18,14 +18,18 @@
 
 #active {
     height: auto;
-    transition: all .6s ease-in-out;
+    transition: all .3s ease-in-out;
+
+
 
 }
 
 #muted {
     height: 50px;
-    transition: all .6s ease-in-out;
+    transition: all .3s ease-in-out;
     font-size: calc(16px + 6 * ((100vw - 320px) / 680));
+
+
 
 
 }

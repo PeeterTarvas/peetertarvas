@@ -30,8 +30,9 @@ export class Information extends React.Component {
         return (
             <div className="information">
                 <div id='intro'>
-                    <div style={{fontSize: '120%', alignSelf: 'center', marginBottom:'20%'}}>
-                        <span  id={'peeter'}>Peeter Tarvas</span> <br/>
+                    <div style={{fontSize: '120%', justifyContent:'center', marginBottom:'20%'}}>
+                        <span className={'d-flex justify-self-center'}  id={'peeter'}>Peeter Tarvas</span>
+                        <br/>
                     </div>
 
 

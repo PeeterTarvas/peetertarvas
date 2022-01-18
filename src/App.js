@@ -1,4 +1,4 @@
-import {Header} from "./components/Sidebar/Header";
+import {Header} from "./components/Header/Header";
 import {Information} from "./components/Information/Information"
 import './index.css';
 import {SkillsPanel} from './components/SkillsPanel/SkillsPanel'
