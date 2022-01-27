@@ -13,6 +13,7 @@ import PropTypes from 'prop-types'
 import "react-pro-sidebar/dist/css/styles.css";
 import "./Header.css"
 import {Container, Nav, Navbar, NavDropdown} from "react-bootstrap";
+import DropdownMenu from "react-bootstrap/DropdownMenu";
 
 export const Header = ({isSubmitBoxOpen}) => {
 
@@ -39,15 +40,16 @@ export const Header = ({isSubmitBoxOpen}) => {
         <Navbar className={'navbar w-100'}>
             <Container className={'d-flex flex-row w-100'} >
                 <Navbar.Collapse className="basic-navbar-nav d-flex justify-content-end">
-                    <Nav className="me-auto ">
-                        <NavDropdown show={show}
+                    <Nav className="d-flex justify-content-end m-3 ">
+                        <NavDropdown
+                                     show={show}
                                      onMouseEnter={showDropdown}
                                      onMouseLeave={hideDropdown}
                                      title={title()}
                                      color={'white'}
                                      id={'dropdown'}
+                                     align={"end"}
                         >
-
                             <NavDropdown.Item href="https://www.facebook.com/peeter.tarvas/" className={'d-flex justify-content-start'}>
                                     <FiFacebook size={40}/>  <span className={'d-flex align-items-center m-2'}> Facebook</span>
                             </NavDropdown.Item>

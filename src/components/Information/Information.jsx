@@ -1,7 +1,6 @@
 import React from "react";
 import './Information.css'
-import IMG_20190616_005315__02 from '../images/IMG_20190616_005315__02.jpg'
-import IMG_20190616_005516 from '../images/IMG_20190616_005516.jpg'
+
 
 
 
@@ -9,21 +8,10 @@ import IMG_20190616_005516 from '../images/IMG_20190616_005516.jpg'
 export class Information extends React.Component {
     constructor(props) {
         super(props);
-        this.state = {
-            img: IMG_20190616_005315__02,
-        };
-
-        this.clickPicture = this.clickPicture.bind(this);
     }
 
 
-    clickPicture = (event) => {
-        if (this.state.img === IMG_20190616_005315__02) {
-            this.setState({img: IMG_20190616_005516});
-        } else {
-            this.setState({img: IMG_20190616_005315__02})
-        }
-    }
+
 
 
     render() {
