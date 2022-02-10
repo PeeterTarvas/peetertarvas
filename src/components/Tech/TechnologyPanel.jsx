@@ -18,23 +18,17 @@ export const TechnologyPanel = () => {
         },
         {
             id: 3,
-            logo: <SiApache/>,
-            name: 'Apache2'
-
-        },
-        {
-            id: 4,
             logo: <SiGnubash/>,
             name: 'Bash'
         },
         {
-            id: 5,
+            id: 4,
             logo: <SiNginx/>,
             name: 'Nginx'
         }, {
-            id: 6,
+            id: 5,
             logo: <SiAmazonaws/>,
-            name: 'AWS(ec2 mainly)'
+            name: 'AWS'
         }
 
     ])
